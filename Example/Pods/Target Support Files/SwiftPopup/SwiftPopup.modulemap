@@ -1,0 +1,6 @@
+framework module SwiftPopup {
+  umbrella header "SwiftPopup-umbrella.h"
+
+  export *
+  module * { export * }
+}

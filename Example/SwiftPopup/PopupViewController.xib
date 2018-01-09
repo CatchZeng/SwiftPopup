@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupViewController" customModule="SwiftPopup_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="b41-zF-G7f" id="4iJ-Oc-sgj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b41-zF-G7f">
+                    <rect key="frame" x="56" y="256" width="262.5" height="175"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cusom Popup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0h-tT-NbM">
+                            <rect key="frame" x="77" y="33.5" width="108" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPb-Zn-8mp">
+                            <rect key="frame" x="41.5" y="116.5" width="48" height="30"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="s2h-tC-UQf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gca-jv-yCq">
+                            <rect key="frame" x="182" y="116.5" width="30" height="30"/>
+                            <state key="normal" title="OK"/>
+                            <connections>
+                                <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="yfA-IT-xSd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="t0h-tT-NbM" firstAttribute="centerY" secondItem="b41-zF-G7f" secondAttribute="centerY" multiplier="0.5" id="2DA-Jr-skb"/>
+                        <constraint firstItem="hPb-Zn-8mp" firstAttribute="centerY" secondItem="b41-zF-G7f" secondAttribute="centerY" multiplier="1.5" id="Tgm-kB-Phb"/>
+                        <constraint firstAttribute="width" secondItem="b41-zF-G7f" secondAttribute="height" multiplier="3:2" id="VhA-I4-gRx"/>
+                        <constraint firstItem="Gca-jv-yCq" firstAttribute="centerY" secondItem="b41-zF-G7f" secondAttribute="centerY" multiplier="1.5" id="Y9y-L5-SKr"/>
+                        <constraint firstItem="hPb-Zn-8mp" firstAttribute="centerX" secondItem="b41-zF-G7f" secondAttribute="centerX" multiplier="0.5" id="uBV-Cz-Pkl"/>
+                        <constraint firstItem="Gca-jv-yCq" firstAttribute="centerX" secondItem="b41-zF-G7f" secondAttribute="centerX" multiplier="1.5" id="wXg-um-HUV"/>
+                        <constraint firstItem="t0h-tT-NbM" firstAttribute="centerX" secondItem="b41-zF-G7f" secondAttribute="centerX" id="xTx-kk-hK3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="b41-zF-G7f" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="QGY-x3-9Qe"/>
+                <constraint firstItem="b41-zF-G7f" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Wth-C5-l70"/>
+                <constraint firstItem="b41-zF-G7f" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="XaR-7b-wTg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-683.5" y="-14.5"/>
+        </view>
+    </objects>
+</document>
