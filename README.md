@@ -5,6 +5,13 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftPopup.svg?style=flat)](http://cocoapods.org/pods/SwiftPopup)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftPopup.svg?style=flat)](http://cocoapods.org/pods/SwiftPopup)
 
+## Features
+
+* Fully customized components
+* Support auto-rotation
+* Support IBInspectable
+* well-adapted
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -54,7 +61,7 @@ backViewColor: UIColor
 
 ![IBInspectable](https://github.com/CatchZeng/SwiftPopup/raw/master/IBInspectable.png)
 
-#### Custom animatedTransitioning, default is  MBAlertAnimationController
+#### Custom animatedTransitioning, default is  SwiftPopupShowAnimation&SwiftPopupDismissAnimation
 
 ```swift
 showAnimation: UIViewControllerAnimatedTransitioning
