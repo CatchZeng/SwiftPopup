@@ -16,7 +16,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-![Effect](https://github.com/CatchZeng/SwiftPopup//raw/master/effect.gif)
+![Effect](https://github.com/CatchZeng/SwiftPopup//raw/master/demo.gif)
 
 ## Usage
 
@@ -78,7 +78,7 @@ backViewColor: UIColor
 
 ![IBInspectable](https://github.com/CatchZeng/SwiftPopup/raw/master/IBInspectable.png)
 
-#### Custom animatedTransitioning, default is  SwiftPopupShowAnimation&SwiftPopupDismissAnimation. If you do not like default animation, you can set showAnimation&dismissAnimation to what you want.
+#### Custom animatedTransitioning, default is  SwiftPopupShowAnimation&SwiftPopupDismissAnimation. If you do not like default animation, you can set showAnimation&dismissAnimation to what you want, like [ActionSheetAnimation](https://github.com/CatchZeng/SwiftPopup/blob/master/Example/SwiftPopup/ActionSheetDemo/ActionSheetAnimation.swift).
 
 ```swift
 showAnimation: UIViewControllerAnimatedTransitioning
