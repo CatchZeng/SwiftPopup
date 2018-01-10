@@ -17,5 +17,7 @@ class AlertDemoViewController: SwiftPopup {
     
     @IBAction func closeButtonClicked(_ sender: Any) {
         dismiss()
+//        dismiss {
+//        }
     }
 }

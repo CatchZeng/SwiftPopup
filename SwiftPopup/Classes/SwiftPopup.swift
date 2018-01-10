@@ -46,22 +46,14 @@ open class SwiftPopup: UIViewController {
     
     // MARK: Public Methods
     
-    @objc public func show() {
-        show(completion: nil)
-    }
-    
-    @objc public func show(above viewController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController,
-                           completion: (()-> Void)?) {
+    public func show(above viewController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController,
+                           completion: (()-> Void)? = nil) {
         mIsShowing = true
         
         viewController?.present(self, animated: true, completion: completion)
     }
     
-    @objc public func dismiss() {
-        dismiss(completion: nil)
-    }
-    
-    @objc public func dismiss(completion: (()-> Void)?) {
+    public func dismiss(completion: (()-> Void)? = nil) {
         dismiss(animated: true) {
             self.mIsShowing = false
             completion?()

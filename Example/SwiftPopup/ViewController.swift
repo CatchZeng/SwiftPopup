@@ -14,10 +14,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        alertDemo.showAnimation.duration = 2.0
+//        alertDemo.showAnimation.delay = 1.0
+//        alertDemo.showAnimation.springWithDamping = 1.0
+//        alertDemo.showAnimation.springVelocity = 0.0
     }
     
     @IBAction func popupButtonClicked(_ sender: Any) {
         alertDemo.show()
+        //alertDemo.show(above: self)
+//        alertDemo.show(above: self) {
+//        }
     }
 }
 

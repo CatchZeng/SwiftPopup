@@ -33,10 +33,41 @@ class TestViewController: SwiftPopup {
 yourCustomPopupViewController.show()
 ```
 
+#### Show above viewcontroller.
+
+```swift
+yourCustomPopupViewController.show(above: viewController)
+```
+
+#### Show above viewcontroller with  completion callback.
+
+```swift
+yourCustomPopupViewController.show(above: viewController) {
+    //Handle cpmpletion.
+}
+```
+
 #### Dismiss
 
 ```swift
 yourCustomPopupViewController.dismiss()
+```
+
+#### Dismiss with  completion callback.
+```
+dismiss {
+    //Handle cpmpletion.
+}
+```
+
+#### isShowing
+
+```
+if yourCustomPopupViewController.isShowing {
+    //Handle showing.
+} else {
+    //Handle is not showing.
+}
 ```
 
 ####  BackView Color, support IBInspectable.
@@ -47,11 +78,19 @@ backViewColor: UIColor
 
 ![IBInspectable](https://github.com/CatchZeng/SwiftPopup/raw/master/IBInspectable.png)
 
-#### Custom animatedTransitioning, default is  SwiftPopupShowAnimation&SwiftPopupDismissAnimation
+#### Custom animatedTransitioning, default is  SwiftPopupShowAnimation&SwiftPopupDismissAnimation. If you do not like default animation, you can set showAnimation&dismissAnimation to what you want.
 
 ```swift
 showAnimation: UIViewControllerAnimatedTransitioning
 dismissAnimation: UIViewControllerAnimatedTransitioning
+```
+
+#### SwiftPopupShowAnimation&SwiftPopupDismissAnimation properties.
+```
+yourCustomPopupViewController.showAnimation.duration = 2.0
+yourCustomPopupViewController.showAnimation.delay = 1.0
+yourCustomPopupViewController.showAnimation.springWithDamping = 1.0
+yourCustomPopupViewController.showAnimation.springVelocity = 0.0
 ```
 
 ## Installation

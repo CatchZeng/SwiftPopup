@@ -1,8 +1,8 @@
 {
   "name": "SwiftPopup",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "Swift Popup.",
-  "description": "Swift full custom Popup view controller.",
+  "description": "Swift fully customized popup view controller.",
   "homepage": "https://github.com/CatchZeng/SwiftPopup",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/CatchZeng/SwiftPopup.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "9.0"
