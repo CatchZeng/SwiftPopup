@@ -26,20 +26,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 class TestViewController: SwiftPopup {
 }
 ```
-#### Set main view [you need to popup], support XIB binding.
-
-```swift
-override func viewDidLoad() {
-    super.viewDidLoad()
-    mainView = UIView()
-    ...
-}
-
-```
-![binding](https://github.com/CatchZeng/SwiftPopup/raw/master/binding.png)
-
-
-![property](https://github.com/CatchZeng/SwiftPopup/raw/master/property.png)
 
 #### Show
 

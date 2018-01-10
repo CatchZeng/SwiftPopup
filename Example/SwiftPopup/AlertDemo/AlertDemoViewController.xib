@@ -14,7 +14,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertDemoViewController" customModule="SwiftPopup_Example" customModuleProvider="target">
             <connections>
-                <outlet property="mainView" destination="bYr-NA-zC3" id="do4-bk-hoc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -117,7 +116,7 @@
                     <include reference="6lu-OQ-vJT"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="-1401" y="-38"/>
+            <point key="canvasLocation" x="-1263" y="-49"/>
         </view>
     </objects>
     <resources>

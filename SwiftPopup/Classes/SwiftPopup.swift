@@ -11,8 +11,6 @@ import SnapKit
 
 open class SwiftPopup: UIViewController {
     
-    @IBOutlet public weak var mainView: UIView!
-    
     @IBInspectable public var backViewColor: UIColor = UIColor(white: 0.1, alpha: 0.5)
     
     // Custom animatedTransitioning
