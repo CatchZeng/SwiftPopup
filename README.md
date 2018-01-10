@@ -10,7 +10,7 @@
 * Fully customized components
 * Support auto-rotation
 * Support IBInspectable
-* well-adapted
+* Well-adapted
 
 ## Example
 
@@ -26,7 +26,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 class TestViewController: SwiftPopup {
 }
 ```
-#### Set main view [you need to alert], support XIB binding.
+#### Set main view [you need to popup], support XIB binding.
 
 ```swift
 override func viewDidLoad() {
@@ -44,13 +44,13 @@ override func viewDidLoad() {
 #### Show
 
 ```swift
-yourCustomAlertViewController.show()
+yourCustomPopupViewController.show()
 ```
 
 #### Dismiss
 
 ```swift
-yourCustomAlertViewController.dismiss()
+yourCustomPopupViewController.dismiss()
 ```
 
 ####  BackView Color, support IBInspectable.
