@@ -10,14 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let popup = PopupViewController()
+    let alertDemo = AlertDemoViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func popupButtonClicked(_ sender: Any) {
-        popup.show()
+        alertDemo.show()
     }
 }
 

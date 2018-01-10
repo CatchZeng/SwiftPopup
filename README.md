@@ -9,7 +9,57 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+![Effect](https://github.com/CatchZeng/SwiftPopup//raw/master/effect.gif)
+
+## Usage
+
+#### Create a SwiftPopup subclass.
+
+```swift
+class TestViewController: SwiftPopup {
+}
+```
+#### Set main view [you need to alert], support XIB binding.
+
+```swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+    mainView = UIView()
+    ...
+}
+
+```
+![binding](https://github.com/CatchZeng/SwiftPopup/raw/master/binding.png)
+
+
+![property](https://github.com/CatchZeng/SwiftPopup/raw/master/property.png)
+
+#### Show
+
+```swift
+yourCustomAlertViewController.show()
+```
+
+#### Dismiss
+
+```swift
+yourCustomAlertViewController.dismiss()
+```
+
+####  BackView Color, support IBInspectable.
+
+```swift
+backViewColor: UIColor
+```
+
+![IBInspectable](https://github.com/CatchZeng/SwiftPopup/raw/master/IBInspectable.png)
+
+#### Custom animatedTransitioning, default is  MBAlertAnimationController
+
+```swift
+showAnimation: UIViewControllerAnimatedTransitioning
+dismissAnimation: UIViewControllerAnimatedTransitioning
+```
 
 ## Installation
 

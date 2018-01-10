@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertDemoViewController" customModule="SwiftPopup_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="bYr-NA-zC3" id="do4-bk-hoc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYr-NA-zC3">
+                    <rect key="frame" x="34.5" y="210" width="306" height="267"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="alert-bg" translatesAutoresizingMaskIntoConstraints="NO" id="5fx-ZS-5ZN">
+                            <rect key="frame" x="0.0" y="0.5" width="306" height="267"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuw-YL-p3b">
+                            <rect key="frame" x="249" y="5.5" width="46.5" height="46.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Cuw-YL-p3b" secondAttribute="height" multiplier="1:1" id="RLP-ZQ-SUP"/>
+                            </constraints>
+                            <state key="normal" image="alert-close"/>
+                            <connections>
+                                <action selector="closeButtonClicked:" destination="-1" eventType="touchUpInside" id="Y2Z-t8-HQI"/>
+                            </connections>
+                        </button>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="alert-mailbox" translatesAutoresizingMaskIntoConstraints="NO" id="bgt-aA-NH0">
+                            <rect key="frame" x="122.5" y="-21" width="61" height="176"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgE-2o-Iex">
+                            <rect key="frame" x="30.5" y="196" width="92" height="36.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="bgE-2o-Iex" secondAttribute="height" multiplier="53:21" id="R4e-md-Z3K"/>
+                            </constraints>
+                            <state key="normal" image="alert-enter"/>
+                            <connections>
+                                <action selector="closeButtonClicked:" destination="-1" eventType="touchUpInside" id="R5P-Zf-g6b"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5A-Xa-5nT">
+                            <rect key="frame" x="183.5" y="195.5" width="92" height="36.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="k5A-Xa-5nT" secondAttribute="height" multiplier="53:21" id="EA7-NG-7bb"/>
+                            </constraints>
+                            <state key="normal" image="alert-subscribe"/>
+                            <connections>
+                                <action selector="closeButtonClicked:" destination="-1" eventType="touchUpInside" id="t4f-ed-O7n"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't miss updates from us!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3H-U2-hNb">
+                            <rect key="frame" x="46" y="123.5" width="215" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5fx-ZS-5ZN" firstAttribute="leading" secondItem="bYr-NA-zC3" secondAttribute="leading" id="0IC-4P-FzG"/>
+                        <constraint firstItem="bgE-2o-Iex" firstAttribute="width" secondItem="bYr-NA-zC3" secondAttribute="width" multiplier="0.3" id="2se-Vg-Ea0"/>
+                        <constraint firstItem="Cuw-YL-p3b" firstAttribute="centerY" secondItem="bYr-NA-zC3" secondAttribute="centerY" multiplier="0.21" id="3hS-ck-HBq"/>
+                        <constraint firstItem="5fx-ZS-5ZN" firstAttribute="top" secondItem="bYr-NA-zC3" secondAttribute="top" id="40d-6l-MKz"/>
+                        <constraint firstItem="Cuw-YL-p3b" firstAttribute="centerX" secondItem="bYr-NA-zC3" secondAttribute="centerX" multiplier="1.78" id="4za-BB-yAO"/>
+                        <constraint firstAttribute="bottom" secondItem="5fx-ZS-5ZN" secondAttribute="bottom" id="7eH-uV-HUf"/>
+                        <constraint firstItem="bgt-aA-NH0" firstAttribute="width" secondItem="bYr-NA-zC3" secondAttribute="width" multiplier="0.2" id="8eP-sZ-SRV"/>
+                        <constraint firstItem="bgt-aA-NH0" firstAttribute="centerX" secondItem="bYr-NA-zC3" secondAttribute="centerX" id="Bxh-2h-dw8"/>
+                        <constraint firstAttribute="width" secondItem="bYr-NA-zC3" secondAttribute="height" multiplier="135:118" id="CF0-Oj-pEw"/>
+                        <constraint firstItem="k5A-Xa-5nT" firstAttribute="top" secondItem="bgE-2o-Iex" secondAttribute="top" id="EuN-aj-PLz"/>
+                        <constraint firstItem="Cuw-YL-p3b" firstAttribute="width" secondItem="bYr-NA-zC3" secondAttribute="width" multiplier="0.15" id="FLK-UE-6yG"/>
+                        <constraint firstItem="d3H-U2-hNb" firstAttribute="centerX" secondItem="bYr-NA-zC3" secondAttribute="centerX" id="H66-Zq-kc9"/>
+                        <constraint firstItem="k5A-Xa-5nT" firstAttribute="centerX" secondItem="bYr-NA-zC3" secondAttribute="centerX" multiplier="1.5" id="L0B-5h-I6Y"/>
+                        <constraint firstItem="d3H-U2-hNb" firstAttribute="centerY" secondItem="bYr-NA-zC3" secondAttribute="centerY" id="a48-fl-e4v"/>
+                        <constraint firstItem="bgE-2o-Iex" firstAttribute="centerY" secondItem="bYr-NA-zC3" secondAttribute="centerY" multiplier="1.6" id="ayT-KF-iXd"/>
+                        <constraint firstItem="k5A-Xa-5nT" firstAttribute="width" secondItem="bgE-2o-Iex" secondAttribute="width" id="cEx-Ta-iEh"/>
+                        <constraint firstItem="bgt-aA-NH0" firstAttribute="centerY" secondItem="bYr-NA-zC3" secondAttribute="centerY" multiplier="0.5" id="ic4-fS-D7C"/>
+                        <constraint firstAttribute="trailing" secondItem="5fx-ZS-5ZN" secondAttribute="trailing" id="jCO-tO-Yri"/>
+                        <constraint firstItem="bgE-2o-Iex" firstAttribute="centerX" secondItem="bYr-NA-zC3" secondAttribute="centerX" multiplier="0.5" id="oNt-rM-yc0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bYr-NA-zC3" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="6lu-OQ-vJT"/>
+                <constraint firstItem="bYr-NA-zC3" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.8" id="HoW-n8-3jq"/>
+                <constraint firstItem="bYr-NA-zC3" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="YJg-Se-XSY"/>
+                <constraint firstItem="bYr-NA-zC3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="eFD-Kk-jHd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="6lu-OQ-vJT"/>
+                    <exclude reference="HoW-n8-3jq"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="HoW-n8-3jq"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="6lu-OQ-vJT"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-1401" y="-38"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alert-bg" width="540" height="472"/>
+        <image name="alert-close" width="48" height="48"/>
+        <image name="alert-enter" width="106" height="42"/>
+        <image name="alert-mailbox" width="131" height="176"/>
+        <image name="alert-subscribe" width="106" height="42"/>
+    </resources>
+</document>

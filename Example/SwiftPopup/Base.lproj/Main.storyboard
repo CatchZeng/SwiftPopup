@@ -22,8 +22,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKk-Qm-Ky4">
-                                <rect key="frame" x="165" y="318.5" width="45" height="30"/>
-                                <state key="normal" title="Popup"/>
+                                <rect key="frame" x="151" y="318.5" width="74" height="30"/>
+                                <state key="normal" title="AlertDemo"/>
                                 <connections>
                                     <action selector="popupButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eQs-CL-wJK"/>
                                 </connections>
@@ -38,6 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-313" y="90"/>
         </scene>
     </scenes>
 </document>
