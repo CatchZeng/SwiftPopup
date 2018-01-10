@@ -14,8 +14,8 @@ open class SwiftPopup: UIViewController {
     @IBInspectable public var backViewColor: UIColor = UIColor(white: 0.1, alpha: 0.5)
     
     // Custom animatedTransitioning
-    public var showAnimation = SwiftPopupShowAnimation()
-    public var dismissAnimation = SwiftPopupDismissAnimation()
+    public var showAnimation: UIViewControllerAnimatedTransitioning? = SwiftPopupShowAnimation()
+    public var dismissAnimation: UIViewControllerAnimatedTransitioning? = SwiftPopupDismissAnimation()
     
     public var isShowing: Bool {
         return mIsShowing
