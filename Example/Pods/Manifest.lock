@@ -1,25 +1,23 @@
 PODS:
-  - Nimble (7.0.3)
-  - Quick (1.2.0)
-  - SnapKit (4.0.0)
-  - SwiftPopup (0.1.1):
+  - SnapKit (4.2.0)
+  - SwiftPopup (0.1.3):
     - SnapKit
 
 DEPENDENCIES:
-  - Nimble (~> 7.0.2)
-  - Quick (~> 1.2.0)
   - SwiftPopup (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
 
 EXTERNAL SOURCES:
   SwiftPopup:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  SwiftPopup: 11d34015b6662aa42b3c9ade1ce12b2921106666
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftPopup: 094eca8daa63396c01e5bdb929796ca0e61f6c9f
 
-PODFILE CHECKSUM: ad6bcda615ba4c0df34b230f47ef8d33df910bab
+PODFILE CHECKSUM: e4730f76fd2531ff5a5845f387c81695e7b468e1
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3
