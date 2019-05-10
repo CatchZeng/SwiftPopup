@@ -1,20 +1,25 @@
 # SwiftPopup
 
+![Swift](https://img.shields.io/badge/Swift-5.0-green.svg)
 [![Version](https://img.shields.io/cocoapods/v/SwiftPopup.svg?style=flat)](http://cocoapods.org/pods/SwiftPopup)
 [![License](https://img.shields.io/cocoapods/l/SwiftPopup.svg?style=flat)](http://cocoapods.org/pods/SwiftPopup)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftPopup.svg?style=flat)](http://cocoapods.org/pods/SwiftPopup)
 
+#### ⚠️ **To use with iOS 9.0+ (Swift 4.x) please ensure you are using >= 4.2.0** ⚠️
+
+#### ⚠️ **To use with iOS 10.0+ (Swift 5.x) please ensure you are using >= 5.0.0** ⚠️
+
 ## Features
 
-* swift 4.2
-* Fully customized components
-* Support auto-rotation
-* Support IBInspectable
-* Well-adapted
+- swift 5.0
+- Fully customized components
+- Support auto-rotation
+- Support IBInspectable
+- Well-adapted
 
 ## Requirements
 
- * iOS 9.0+
+- iOS 10.0+
 
 ## Example
 
@@ -43,7 +48,7 @@ yourCustomPopupViewController.show()
 yourCustomPopupViewController.show(above: viewController)
 ```
 
-#### Show above viewcontroller with  completion callback.
+#### Show above viewcontroller with completion callback.
 
 ```swift
 yourCustomPopupViewController.show(above: viewController) {
@@ -57,7 +62,8 @@ yourCustomPopupViewController.show(above: viewController) {
 yourCustomPopupViewController.dismiss()
 ```
 
-#### Dismiss with  completion callback.
+#### Dismiss with completion callback.
+
 ```
 dismiss {
     //Handle cpmpletion.
@@ -74,7 +80,7 @@ if yourCustomPopupViewController.isShowing {
 }
 ```
 
-####  BackView Color, support IBInspectable.
+#### BackView Color, support IBInspectable.
 
 ```swift
 backViewColor: UIColor
@@ -82,7 +88,7 @@ backViewColor: UIColor
 
 ![IBInspectable](https://github.com/CatchZeng/SwiftPopup/raw/master/IBInspectable.png)
 
-#### Custom animatedTransitioning, default is  SwiftPopupShowAnimation&SwiftPopupDismissAnimation. If you do not like default animation, you can set showAnimation&dismissAnimation to what you want, like [ActionSheetAnimation](https://github.com/CatchZeng/SwiftPopup/blob/master/Example/SwiftPopup/ActionSheetDemo/ActionSheetAnimation.swift).
+#### Custom animatedTransitioning, default is SwiftPopupShowAnimation&SwiftPopupDismissAnimation. If you do not like default animation, you can set showAnimation&dismissAnimation to what you want, like [ActionSheetAnimation](https://github.com/CatchZeng/SwiftPopup/blob/master/Example/SwiftPopup/ActionSheetDemo/ActionSheetAnimation.swift).
 
 ```swift
 showAnimation: UIViewControllerAnimatedTransitioning
@@ -90,6 +96,7 @@ dismissAnimation: UIViewControllerAnimatedTransitioning
 ```
 
 #### SwiftPopupShowAnimation&SwiftPopupDismissAnimation properties.
+
 ```
 yourCustomPopupViewController.showAnimation.duration = 2.0
 yourCustomPopupViewController.showAnimation.delay = 1.0
@@ -103,7 +110,14 @@ SwiftPopup is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
+
 pod 'SwiftPopup'
+
+// iOS 9.0+
+pod 'SwiftPopup', '~> 4.2.0'
+
+// iOS 10.0+
+pod 'SwiftPopup', '~> 5.0.0'
 ```
 
 ## Author

@@ -8,15 +8,15 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftPopup'
-  s.version          = '4.2.0'
-  s.swift_version    = '4.2'
+  s.version          = '5.0.0'
+  s.swift_version    = '5.0'
   s.summary          = 'Swift Popup.'
   s.description      = 'Swift fully customized popup view controller.'
   s.homepage         = 'https://github.com/CatchZeng/SwiftPopup'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'CatchZeng' => '891793848@qq.com' }
   s.source           = { :git => 'https://github.com/CatchZeng/SwiftPopup.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.source_files = 'SwiftPopup/Classes/**/*'
-  s.dependency 'SnapKit', '~> 4.2.0'
+  s.dependency 'SnapKit', '~> 5.0.0'
 end

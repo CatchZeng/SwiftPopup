@@ -1,7 +1,7 @@
 PODS:
-  - SnapKit (4.2.0)
-  - SwiftPopup (0.1.3):
-    - SnapKit (~> 4.2.0)
+  - SnapKit (5.0.0)
+  - SwiftPopup (5.0.0):
+    - SnapKit (~> 5.0.0)
 
 DEPENDENCIES:
   - SwiftPopup (from `../`)
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SwiftPopup: 000732788781e3e5c5b952b81fa4c3d1bddfaafe
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SwiftPopup: 31874508c0d91788edf71419a5bbeb3ebd498ab9
 
 PODFILE CHECKSUM: e4730f76fd2531ff5a5845f387c81695e7b468e1
 
